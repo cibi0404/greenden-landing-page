@@ -1,210 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <title>Green Den</title>
-</head>
-<body>
-
-  <!-- Responsive Nav Bar -->
-  <nav class="bg-green-100 p-3 flex justify-between text-center shadow-xl sticky top-0">
-    <h2 class="text-2xl">GREENDEN</h2>
-    <svg xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      width="25"
-      height="30">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" class="md:hidden"/>
-    </svg>
-    <ul class="gap-5 text-gray-600 hidden md:flex">
-<li class="hover:underline cursor-pointer"><a href="./index.html">Home</a></li>
-      <li class="hover:underline cursor-pointer"><a href="./product.html">Products</a></li>
-      <li class="hover:underline cursor-pointer"><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="bg-green-100 p-4 flex justify-center">
-    <div>
-      <p class="mb-4">We offer you a wide range of Artificial & Natural Plants</p>
-      <h2 class="text-3xl font-bold mb-3">Plants for your Interior</h2>
-      <div class="flex gap-1">
-        <button class="bg-black rounded text-white p-1">Shop Now</button>
-        <button class="border border-black rounded p-2">Watch Vedio</button>
-      </div>
-      <p class="mt-7">160+ Species | 100+ Clients</p>
-    </div>
-    <div class="p-2 w-60 gap-3 hidden md:block mt-3">
-      <img src="./Images/A_image_18_67e1740e-7b24-4945-bc5e-0e7ce8428105.webp" alt="Header Image" class="pl-5">
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="text-center">
-    <h1 class="text-3xl mt-4 font-bold">About Us</h1>
-    <p>This Site is for those who admire nature and plant</p>
-    <div class="md:flex">
-
-      <!-- Large Assortment -->
-      <div class="border border-black p-2 m-4">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-20 inline">
-          <path fill-rule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h1.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75V4h3Z" clip-rule="evenodd"/>
-          <path fill-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7Zm6.585 1.08a.75.75 0 0 1 .336 1.005l-1.75 3.5a.75.75 0 0 1-1.16.234l-1.75-1.5a.75.75 0 0 1 .977-1.139l1.02.875 1.321-2.64a.75.75 0 0 1 1.006-.336Z" clip-rule="evenodd"/>
-        </svg>
-        <h2 class="text-2xl">Large Assortment</h2>
-        <p>
-          We offer an extensive collection of over 500 plant species, ranging from rare exotic
-          plants to everyday indoor greens. Whether you're looking for air-purifying plants,
-          flowering beauties, or low-maintenance succulents, we have it all.
-        </p>
-      </div>
-
-      <!-- Free Shipping -->
-      <div class="border border-black p-2 m-4">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-20 inline">
-          <path fill-rule="evenodd" d="M8 3.5c-.771 0-1.537.022-2.297.066a1.124 1.124 0 0 0-1.058 1.028l-.018.214a.75.75 0 1 1-1.495-.12l.018-.221a2.624 2.624 0 0 1 2.467-2.399 41.628 41.628 0 0 1 4.766 0 2.624 2.624 0 0 1 2.467 2.399c.056.662.097 1.329.122 2l.748-.748a.75.75 0 1 1 1.06 1.06l-2 2.001a.75.75 0 0 1-1.061 0l-2-1.999a.75.75 0 0 1 1.061-1.06l.689.688a39.89 39.89 0 0 0-.114-1.815 1.124 1.124 0 0 0-1.058-1.028A40.138 40.138 0 0 0 8 3.5ZM3.22 7.22a.75.75 0 0 1 1.061 0l2 2a.75.75 0 1 1-1.06 1.06l-.69-.69c.025.61.062 1.214.114 1.816.048.56.496.996 1.058 1.028a40.112 40.112 0 0 0 4.594 0 1.124 1.124 0 0 0 1.058-1.028 39.2 39.2 0 0 0 .018-.219.75.75 0 1 1 1.495.12l-.018.226a2.624 2.624 0 0 1-2.467 2.399 41.648 41.648 0 0 1-4.766 0 2.624 2.624 0 0 1-2.467-2.399 41.395 41.395 0 0 1-.122-2l-.748.748A.75.75 0 1 1 1.22 9.22l2-2Z" clip-rule="evenodd"/>
-        </svg>
-        <h2 class="text-2xl">Free Shipping</h2>
-        <p>
-          We believe every plant lover deserves a hassle-free shopping experience. That's
-          why we offer completely free shipping on all orders above ₹499 across India.
-          Our expert packaging team carefully wraps each plant to ensure it reaches you
-          fresh, healthy, and in perfect condition. ep, right on time.
-        </p>
-      </div>
-
-      <!-- 24/7 Support -->
-      <div class="border border-black p-2 m-4">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-20 inline">
-          <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5V5c0 1.149.15 2.263.43 3.326a13.022 13.022 0 0 0 9.244 9.244c1.063.28 2.177.43 3.326.43h1.5a1.5 1.5 0 0 0 1.5-1.5v-1.148a1.5 1.5 0 0 0-1.175-1.465l-3.223-.716a1.5 1.5 0 0 0-1.767 1.052l-.267.933c-.117.41-.555.643-.95.48a11.542 11.542 0 0 1-6.254-6.254c-.163-.395.07-.833.48-.95l.933-.267a1.5 1.5 0 0 0 1.052-1.767l-.716-3.223A1.5 1.5 0 0 0 4.648 2H3.5ZM16.72 2.22a.75.75 0 1 1 1.06 1.06L14.56 6.5h2.69a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l3.22-3.22Z"/>
-        </svg>
-        <h2 class="text-2xl">24/7 Support</h2>
-        <p>
-          We are committed to providing you with the best customer experience at all times.
-          Our friendly and knowledgeable support team is available 24 hours a day, 7 days
-          a week to assist you with anything you need. Whether you have questions about
-          plant care, need help tracking your order, or want advice on choosing the right plant.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Best Sellers Section -->
-  <section class="p-4 text-center">
-  <h2 class="text-3xl font-bold mt-4">Best Sellers</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3">
-    <div>
-      <img src="./Images/bestseller-1 (1).jpg" alt="" class="mx-auto hover:shadow-gray-400 hover:-translate-y-2 hover:shadow-xl transition duration-300">
-      <h2>Clautus</h2>
-      <p>RS.2000</p>
-    </div>
-    <div>
-      <img src="./Images/bestseller-3.jpg" alt="" class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300">
-      <h2>Plantos</h2>
-      <p>RS.1000</p>
-    </div>
-    <div>
-      <img src="./Images/bestseller-1.jpg" alt="" class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300">
-      <h2>Lopus</h2>
-      <p>RS.3000</p>
-    </div>
-    <div>
-      <img src="./Images/bestseller-4.jpg" alt="" class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300">
-      <h2>Citrum</h2>
-      <p>RS.2500</p>
-    </div>
-  </div>
-</section>
-
-  <!-- Review Section -->
-  <section class="text-center mt-4">
-    <h2 class="text-3xl font-bold">Customer Review</h2>
-    <div class="md:flex p-5 gap-4">
-      <p class="border border-black p-2">
-        "Absolutely love my new indoor plants! They arrived fresh,
-        healthy, and beautifully packed. My living room looks so
-        much better now. Will definitely order again!"
-        — Priya S, Chennai
-      </p>
-      <p class="border border-black p-2">
-        "Great qality plants at affordable prices. The free shipping
-        was a bonus! Customer support helped me choose the right plant
-        for my office. Highly recommended!"
-        — Rahul M, Bangalore
-      </p>
-      <p class="border border-black p-2">
-        "I ordered 5 plants and every single one was in perfect
-        condition. The packaging was so careful and secure.
-        GreenDen is now my go-to place for all my plant needs!"
-        — Sneha K, Mumbai
-      </p>
-    </div>
-  </section>
-
-  <!-- Newsletter Section -->
-  <section class="text-center mt-4 p-8">
-    <h2 class="text-4xl font-bold mb-3">Join Our Newsletter</h2>
-    <p class="text-lg text-gray-500 mt-4">Subscribe to get our daily discounts, updates and more..</p>
-    <div class="flex justify-center items-center gap-2 mt-6">
-      <input
-        type="text"
-        placeholder="Enter your email"
-        class="border border-gray-300 rounded-lg px-4 py-2 w-72 outline-none focus:border-green-500"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <title>Green Den</title>
+  </head>
+  <body>
+    <!-- Responsive Nav Bar -->
+    <nav
+      class="bg-green-100 p-3 flex justify-between text-center shadow-xl sticky top-0"
+    >
+      <h2 class="text-2xl">GREENDEN</h2>
+      <svg id="menuicon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        width="25"
+        height="30"
       >
-      <button
-        type="button"
-        class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300">
-        Subscribe
-      </button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-green-900 text-white p-10 mt-6">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Column 1: Brand -->
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          class="md:hidden"
+        />
+      </svg>
+      <ul class="gap-5 text-gray-600 hidden md:flex">
+        <li class="hover:underline cursor-pointer">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./product.html">Products</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+      <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-300" 
+  style="width:50%; height:100vh; right:-50%;">
+        <div class="text-right p-5">
+          <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col  items-center gap-10 text-gray-600  md:flex">
+          
+        <li class="hover:underline cursor-pointer">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./product.html">Products</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./contact.html">Contact</a>
+        </li>
+        
+      </section>
+      
+    <!-- Hero Section -->
+    <section class="bg-green-100 p-4 flex justify-center">
       <div>
-        <h2 class="text-2xl font-bold mb-3">GREENDEN</h2>
-        <p class="text-gray-300 text-sm">
-          We bring nature closer to you. Explore our wide range of
-          indoor and outdoor plants for your home and office.
+        <p class="mb-4">
+          We offer you a wide range of Artificial & Natural Plants
+        </p>
+        <h2 class="text-3xl font-bold mb-3">Plants for your Interior</h2>
+        <div class="flex gap-1">
+          <button class="bg-black rounded text-white p-1">Shop Now</button>
+          <button class="border border-black rounded p-2">Watch Vedio</button>
+        </div>
+        <p class="mt-7">160+ Species | 100+ Clients</p>
+      </div>
+      <div class="p-2 w-60 gap-3 hidden md:block mt-3">
+        <img
+          src="./Images/A_image_18_67e1740e-7b24-4945-bc5e-0e7ce8428105.webp"
+          alt="Header Image"
+          class="pl-5"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="text-center">
+      <h1 class="text-3xl mt-4 font-bold">About Us</h1>
+      <p>This Site is for those who admire nature and plant</p>
+      <div class="md:flex">
+        <!-- Large Assortment -->
+        <div class="border border-black p-2 m-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h1.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75V4h3Z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M2 7a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7Zm6.585 1.08a.75.75 0 0 1 .336 1.005l-1.75 3.5a.75.75 0 0 1-1.16.234l-1.75-1.5a.75.75 0 0 1 .977-1.139l1.02.875 1.321-2.64a.75.75 0 0 1 1.006-.336Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h2 class="text-2xl">Large Assortment</h2>
+          <p>
+            We offer an extensive collection of over 500 plant species, ranging
+            from rare exotic plants to everyday indoor greens. Whether you're
+            looking for air-purifying plants, flowering beauties, or
+            low-maintenance succulents, we have it all.
+          </p>
+        </div>
+
+        <!-- Free Shipping -->
+        <div class="border border-black p-2 m-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 3.5c-.771 0-1.537.022-2.297.066a1.124 1.124 0 0 0-1.058 1.028l-.018.214a.75.75 0 1 1-1.495-.12l.018-.221a2.624 2.624 0 0 1 2.467-2.399 41.628 41.628 0 0 1 4.766 0 2.624 2.624 0 0 1 2.467 2.399c.056.662.097 1.329.122 2l.748-.748a.75.75 0 1 1 1.06 1.06l-2 2.001a.75.75 0 0 1-1.061 0l-2-1.999a.75.75 0 0 1 1.061-1.06l.689.688a39.89 39.89 0 0 0-.114-1.815 1.124 1.124 0 0 0-1.058-1.028A40.138 40.138 0 0 0 8 3.5ZM3.22 7.22a.75.75 0 0 1 1.061 0l2 2a.75.75 0 1 1-1.06 1.06l-.69-.69c.025.61.062 1.214.114 1.816.048.56.496.996 1.058 1.028a40.112 40.112 0 0 0 4.594 0 1.124 1.124 0 0 0 1.058-1.028 39.2 39.2 0 0 0 .018-.219.75.75 0 1 1 1.495.12l-.018.226a2.624 2.624 0 0 1-2.467 2.399 41.648 41.648 0 0 1-4.766 0 2.624 2.624 0 0 1-2.467-2.399 41.395 41.395 0 0 1-.122-2l-.748.748A.75.75 0 1 1 1.22 9.22l2-2Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h2 class="text-2xl">Free Shipping</h2>
+          <p>
+            We believe every plant lover deserves a hassle-free shopping
+            experience. That's why we offer completely free shipping on all
+            orders above ₹499 across India. Our expert packaging team carefully
+            wraps each plant to ensure it reaches you fresh, healthy, and in
+            perfect condition. ep, right on time.
+          </p>
+        </div>
+
+        <!-- 24/7 Support -->
+        <div class="border border-black p-2 m-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-20 inline"
+          >
+            <path
+              d="M3.5 2A1.5 1.5 0 0 0 2 3.5V5c0 1.149.15 2.263.43 3.326a13.022 13.022 0 0 0 9.244 9.244c1.063.28 2.177.43 3.326.43h1.5a1.5 1.5 0 0 0 1.5-1.5v-1.148a1.5 1.5 0 0 0-1.175-1.465l-3.223-.716a1.5 1.5 0 0 0-1.767 1.052l-.267.933c-.117.41-.555.643-.95.48a11.542 11.542 0 0 1-6.254-6.254c-.163-.395.07-.833.48-.95l.933-.267a1.5 1.5 0 0 0 1.052-1.767l-.716-3.223A1.5 1.5 0 0 0 4.648 2H3.5ZM16.72 2.22a.75.75 0 1 1 1.06 1.06L14.56 6.5h2.69a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l3.22-3.22Z"
+            />
+          </svg>
+          <h2 class="text-2xl">24/7 Support</h2>
+          <p>
+            We are committed to providing you with the best customer experience
+            at all times. Our friendly and knowledgeable support team is
+            available 24 hours a day, 7 days a week to assist you with anything
+            you need. Whether you have questions about plant care, need help
+            tracking your order, or want advice on choosing the right plant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="p-4 text-center">
+      <h2 class="text-3xl font-bold mt-4">Best Sellers</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3">
+        <div>
+          <img
+            src="./Images/bestseller-1 (1).jpg"
+            alt=""
+            class="mx-auto hover:shadow-gray-400 hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          />
+          <h2>Clautus</h2>
+          <p>RS.2000</p>
+        </div>
+        <div>
+          <img
+            src="./Images/bestseller-3.jpg"
+            alt=""
+            class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          />
+          <h2>Plantos</h2>
+          <p>RS.1000</p>
+        </div>
+        <div>
+          <img
+            src="./Images/bestseller-1.jpg"
+            alt=""
+            class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          />
+          <h2>Lopus</h2>
+          <p>RS.3000</p>
+        </div>
+        <div>
+          <img
+            src="./Images/bestseller-4.jpg"
+            alt=""
+            class="mx-auto hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          />
+          <h2>Citrum</h2>
+          <p>RS.2500</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="text-center mt-4">
+      <h2 class="text-3xl font-bold">Customer Review</h2>
+      <div class="md:flex p-5 gap-4">
+        <p class="border border-black p-2">
+          "Absolutely love my new indoor plants! They arrived fresh, healthy,
+          and beautifully packed. My living room looks so much better now. Will
+          definitely order again!" — Priya S, Chennai
+        </p>
+        <p class="border border-black p-2">
+          "Great qality plants at affordable prices. The free shipping was a
+          bonus! Customer support helped me choose the right plant for my
+          office. Highly recommended!" — Rahul M, Bangalore
+        </p>
+        <p class="border border-black p-2">
+          "I ordered 5 plants and every single one was in perfect condition. The
+          packaging was so careful and secure. GreenDen is now my go-to place
+          for all my plant needs!" — Sneha K, Mumbai
         </p>
       </div>
+    </section>
 
-      <!-- Column 2: Quick Links -->
-      <div>
-        <h3 class="text-xl font-bold mb-3">Quick Links</h3>
-        <ul class="text-gray-300 space-y-2">
-          <li class="hover:text-white cursor-pointer">Home</li>
-          <li class="hover:text-white cursor-pointer">Products</li>
-          <li class="hover:text-white cursor-pointer">Contact</li>
-          <li class="hover:text-white cursor-pointer">About Us</li>
-        </ul>
+    <!-- Newsletter Section -->
+    <section class="text-center mt-4 p-8">
+      <h2 class="text-4xl font-bold mb-3">Join Our Newsletter</h2>
+      <p class="text-lg text-gray-500 mt-4">
+        Subscribe to get our daily discounts, updates and more..
+      </p>
+      <div class="flex justify-center items-center gap-2 mt-6">
+        <input
+          type="text"
+          placeholder="Enter your email"
+          class="border border-gray-300 rounded-lg px-4 py-2 w-72 outline-none focus:border-green-500"
+        />
+        <button
+          type="button"
+          class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white p-10 mt-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Column 1: Brand -->
+        <div>
+          <h2 class="text-2xl font-bold mb-3">GREENDEN</h2>
+          <p class="text-gray-300 text-sm">
+            We bring nature closer to you. Explore our wide range of indoor and
+            outdoor plants for your home and office.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-3">Quick Links</h3>
+          <ul class="text-gray-300 space-y-2">
+            <li class="hover:text-white cursor-pointer">Home</li>
+            <li class="hover:text-white cursor-pointer">Products</li>
+            <li class="hover:text-white cursor-pointer">Contact</li>
+            <li class="hover:text-white cursor-pointer">About Us</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div>
+          <h3 class="text-xl font-bold mb-3">Contact Us</h3>
+          <ul class="text-gray-300 space-y-2 text-sm">
+            <li>📧 greenden@gmail.com</li>
+            <li>📞 +91 98765 43210</li>
+            <li>📍 Chennai, Tamil Nadu, India</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Column 3: Contact -->
-      <div>
-        <h3 class="text-xl font-bold mb-3">Contact Us</h3>
-        <ul class="text-gray-300 space-y-2 text-sm">
-          <li>📧 greenden@gmail.com</li>
-          <li>📞 +91 98765 43210</li>
-          <li>📍 Chennai, Tamil Nadu, India</li>
-        </ul>
+      <!-- Bottom Bar -->
+      <div
+        class="border-t border-green-700 mt-8 pt-4 text-center text-gray-400 text-sm"
+      >
+        <p>© 2024 GreenDen. All Rights Reserved.</p>
       </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="border-t border-green-700 mt-8 pt-4 text-center text-gray-400 text-sm">
-      <p>© 2024 GreenDen. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+    <script src="./menu.js"></script>
+  </body>
 </html>

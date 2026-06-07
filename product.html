@@ -9,14 +9,14 @@
 <body>
  <nav class="bg-green-100 p-3 flex justify-between text-center shadow-xl sticky top-0">
     <h2 class="text-2xl">GREENDEN</h2>
-    <svg xmlns="http://www.w3.org/2000/svg"
+    <svg id ="menuicon" class="md:hidden" xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
       width="25"
       height="30">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" class="md:hidden"/>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
     <ul class="gap-5 text-gray-600 hidden md:flex">
 <li class="hover:underline cursor-pointer"><a href="./index.html">Home</a></li>
@@ -24,12 +24,30 @@
       <li class="hover:underline cursor-pointer"><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
+  <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-300" 
+  style="width:50%; height:100vh; right:-50%;">
+        <div class="text-right p-5">
+          <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col  items-center gap-10 text-gray-600  md:flex">
+          
+        <li class="hover:underline cursor-pointer">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./product.html">Products</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./contact.html">Contact</a>
+        </li>
+        
+      </section>
 <section class="text-center p-4 ">
         <h2 class="text-4xl mt-4 mb-4">Our Products</h2>
         <div class="">
-            <input type="text" placeholder="Search for Products" class="border border-gray-500 w-9/12 p-2 focus:border-green-500 outline-none hover:placeholder:bg-green-500 cursor-pointer">
+            <input id = "search" type="text" placeholder="Search for Products" class="border border-gray-500 w-9/12 p-2 focus:border-green-500 outline-none hover:placeholder:bg-green-500 cursor-pointer">
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4" id="productcontainer">
            <div>
                <img src="./Images/bestseller-1 (1).jpg" alt="" class="mx-auto hover:shadow-gray-400 hover:-translate-y-2 hover:shadow-xl transition duration-300">
                 <h2>Clautus</h2>
@@ -127,5 +145,7 @@
       <p>© 2024 GreenDen. All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="./menu.js" ></script>
+  <script src="./product.js" ></script>
 </body>
 </html>

@@ -10,14 +10,14 @@
 <body>
     <nav class="bg-green-100 p-3 flex justify-between text-center shadow-xl sticky top-0">
     <h2 class="text-2xl">GREENDEN</h2>
-    <svg xmlns="http://www.w3.org/2000/svg"
+    <svg  id="menuicon" class="md:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
       width="25"
       height="30">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" class="md:hidden"/>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
     <ul class="gap-5 text-gray-600 hidden md:flex">
 <li class="hover:underline cursor-pointer"><a href="./index.html">Home</a></li>
@@ -25,6 +25,24 @@
       <li class="hover:underline cursor-pointer"><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
+  <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-300" 
+  style="width:50%; height:100vh; right:-50%;">
+        <div class="text-right p-5">
+          <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col  items-center gap-10 text-gray-600  md:flex">
+          
+        <li class="hover:underline cursor-pointer">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./product.html">Products</a>
+        </li>
+        <li class="hover:underline cursor-pointer">
+          <a href="./contact.html">Contact</a>
+        </li>
+        
+      </section>
   <!-- Contact Section -->
   <!-- Contact Us -->
 <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -196,5 +214,6 @@
       <p>© 2024 GreenDen. All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="./menu.js"></script>
 </body>
 </html>
